@@ -5,9 +5,13 @@ body {
     flex-direction: column; 
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .header,
 .footer {
-    border: 1px dashed red;
     display: flex;
     background-color: #1F2937;
     color: white;
@@ -18,8 +22,11 @@ body {
     justify-content: space-between;
 }
 
+.footer {
+    justify-content: center;
+}
+
 .header-cont {
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -29,17 +36,36 @@ body {
     border: 1px solid blue;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    flex: 1 1 0;
+}
+
+.top-cont {
+    border: 1px solid red;
+    display: flex;
+    background: #1F2937;
+    color: white;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.topleft-cont {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+}
+
+.topright-cont {
+    border: 1px solid red;
 }
 
 .image-cont {
     text-align: center;
+    padding: 10px 0 50px 0;
 }
 
 .page-images {
     display: flex;
+    justify-content: center;
     gap: 30px;
 }
 
@@ -58,19 +84,53 @@ body {
 }
 
 .review-cont {
+    border: 1px solid green;
     background: #e5e7eb;
     padding: 20px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.reviewer {
+    font-weight: 700;
+    text-align: right;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.signup-cont {
+    border: 1px solid purple;
+    display: flex;
+    justify-content: center;
+
 }
 
 .signup-card {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
     background-color: #3882F6;
+    flex-shrink: auto;
+    width: 800px;
     border-radius: 5px;
     padding: 20px 60px;
+    margin: 50px;
 }
 
-.footer {
-    justify-content: center;
+.signup-card-left {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blue;
+}
+
+.signup-button {
+    height: 25px;
+    width: 80px;
+    margin: 10px 0;
+    font-size: 10px;
+    font-weight: 700;
+    color: white;
+    background-color: #3882F6;
+    border: 1px solid white;
+    border-radius: 5px;
 }
