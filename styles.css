@@ -2,11 +2,24 @@
     /* border: 1px dashed red; */
 }
 
-.header {
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+}
+
+.header,
+.footer {
     border: 1px dashed red;
     display: flex;
+    background-color: #1F2937;
+    color: white;
+    padding: 20px;
+}
+
+.header {
     justify-content: space-between;
-    margin: 20px;
 }
 
 .header-cont {
@@ -17,12 +30,37 @@
 }
 
 .content {
+    border: 1px solid blue;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+    flex: 1 1 0;
+}
+
+.image-cont {
+    text-align: center;
+}
+
+.page-images {
+    display: flex;
+}
+
+.review-cont {
+    background: #e5e7eb;
+    padding: 20px;
+}
+
+.signup-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    background-color: blue;
+    border-radius: 5px;
+    padding: 20px 60px;
 }
 
 .footer {
-    display: flex;
     justify-content: center;
 }
